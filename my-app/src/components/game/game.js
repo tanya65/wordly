@@ -27,7 +27,7 @@ class Game extends Component{
         this.setColor = this.setColor.bind(this);
     }
 
-    render(){
+      render(){
         return (
 
             <div id="game">
@@ -92,7 +92,7 @@ class Game extends Component{
         }
         let attemptedWords = this.state.attemptedWords;
         attemptedWords.push(guess);
-        let isSuccess = guess==this.state.targetWord?true:false;
+        let isSuccess = guess.toLowerCase()==this.state.targetWord.toLowerCase()?true:false;
         this.setState({attemptedWords,disableSubmit:true, guessWord:"11111", attemptsLeft:this.state.totalAttempts-this.state.attemptedWords.length, isSuccess});
     }
 

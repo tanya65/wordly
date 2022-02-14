@@ -16,9 +16,7 @@ class SuccessDialog extends Component{
                 <div style={{padding:"10%", textAlign:"center"}}>
                     <div style={{display:"inline-block", width:"100%", marginBottom:"10px"}}><img src={IceCreamImage} style={{width:"40%", maxWidth:"300px", minWidth:"200px"}}/></div>
                 <h2>Bravo!!</h2>
-                <p> You got it right. Time for a dessert.</p>
-
-                <p style={{marginTop:"10px"}}>Up for another round?</p>
+                <p> You got it right. Up for another round?</p>
 
                 <div style={{width:"100%", display:"flex", justifyContent:"center"}}>
                     <ColorButton onClick={e=>this.closeDialog}>Nah, maybe later</ColorButton>
